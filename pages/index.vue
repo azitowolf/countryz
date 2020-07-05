@@ -4,7 +4,7 @@
       <!-- Country CARDS HERE -->
       <div
         v-for="country in countries.slice(0,25)"
-        :key="country.alpha3code"
+        :key="country.alpha3Code"
         :title="country.name"
         class="column is-one-fifth"
       >
@@ -12,7 +12,7 @@
           <div class="card-header">{{country.name}}</div>
           <div class="card-content">
             info about countries
-            <!-- info -->
+            <!-- add info -->
           </div>
           <div class="card-image">
             <figure class="image is-4by3">
@@ -20,7 +20,7 @@
             </figure>
           </div>
         </div>
-        <a href="https://github.com/buefy/buefy">GitHub</a>
+        <nuxt-link :to="`/country/${country.alpha3Code}`">Go to Country</nuxt-link>
       </div>
     </div>
   </section>
@@ -56,7 +56,6 @@ export default {
         "https://restcountries.eu/rest/v2/all",
         config
       );
-      console.log(res.data);
       this.countries = res.data;
     } catch (e) {
       console.log(e);
