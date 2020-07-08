@@ -12,9 +12,8 @@ concepts I want to explore
 
 Learning Sources:
 * Nuxt.js Crash course: https://www.youtube.com/watch?v=ltzlhAxJr74&t=728s
-* pagination in vue.js: https://medium.com/@denny.headrick/pagination-in-vue-js-4bfce47e573b
-* Bulma docs: https://bulma.io/documentation/components/card/#
-*    
+* Pagination in vue.js: https://medium.com/@denny.headrick/pagination-in-vue-js-4bfce47e573b
+* Bulma docs: https://bulma.io/documentation/components/card/#   
 
 ## Sitemap
 Home
