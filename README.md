@@ -3,14 +3,16 @@ A lil testapp to familiarize myself with Nuxt.js
 
 concepts I want to explore
 
-* Serverside rendering!!
-* SEO header + other meta info setting
-* urls links + routing
-* layouts
-* data manipulation via API
-* code-splitting
+* Serverside rendering!! ✅
+* SEO header + other meta info setting ✅
+* urls links + routing ✅
+* layouts ✅
+* data manipulation via API ✅
+  * via static content
+* code-splitting 
 
 Learning Sources:
+* The Nuxt Docs: https://nuxtjs.org/api/configuration-build
 * Nuxt.js Crash course: https://www.youtube.com/watch?v=ltzlhAxJr74&t=728s
 * Pagination in vue.js: https://medium.com/@denny.headrick/pagination-in-vue-js-4bfce47e573b
 * Bulma docs: https://bulma.io/documentation/components/card/#   
@@ -18,6 +20,8 @@ Learning Sources:
 ## Sitemap
 Home
   * contains a list of countries from the API REST Countries (https://restcountries.eu/rest/v2/all)
+Country Detail
+  * info on individual country
 About
   * This is an app that I built to learn a little bit about working with some new FE frameworks - Nuxt.js and Bulma for styles. 
 

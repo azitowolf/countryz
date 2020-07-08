@@ -45,21 +45,9 @@ export default {
       countries: []
     };
   },
-  async created() {
-    const config = {
-      headers: {
-        Accept: "application/json"
-      }
-    };
-    try {
-      const res = await axios.get(
-        "https://restcountries.eu/rest/v2/all",
-        config
-      );
-      this.countries = res.data;
-    } catch (e) {
-      console.log(e);
-    }
+  async asyncData ({ params }) {
+    const { data } = await axios.get(`https://restcountries.eu/rest/v2/all`)
+    return { countries: data }
   }
 };
 </script>
